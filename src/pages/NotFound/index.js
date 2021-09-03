@@ -1,10 +1,11 @@
-import React from 'react';
-import {NotFoundArea} from './styled';
+import {Container, GoIndex, NotFoundText} from './styled';
+import {Link} from 'react-router-dom';
 const Page = () => {
-	return(
-			<NotFoundArea>
-				Page Not Found
-			</NotFoundArea>
+	return (
+			<Container>
+				<GoIndex><Link to="/">Go back to Index</Link></GoIndex>
+				<NotFoundText>Oops, Page not found!</NotFoundText>
+			</Container>
 		);
 }
 export default Page;
